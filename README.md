@@ -10,6 +10,17 @@ In this project, we were asked to build a bubble sorting algorithm where each el
 
 - RUBY
 
+## 🤝 Contributing
+
+Contributions, issues and feature requests are welcome! Start by:
+
+- Forking the project
+- Cloning the project to your local machine
+- `cd` into the project directory
+- Run `git checkout -b your-branch-name`
+- Make your contributions
+- Push your branch up to your forked repository
+- Open a Pull Request with a detailed description to the development branch of the original project for a review
 
 ## Authors
 
@@ -25,12 +36,6 @@ In this project, we were asked to build a bubble sorting algorithm where each el
 - Twitter: [@DDambis](https://twitter.com/DDambis)
 - Linkedin: [Davis Dambis](https://www.linkedin.com/in/dāvis-dambis-51551219a/)
 
-
-## 🤝 Contributing
-
-Contributions, issues and feature requests are welcome!
-
-Feel free to check the [issues page](https://github.com/BrittanyBlake/Bubble-sort/issues).
 
 ## Show your support
 
