@@ -10,9 +10,33 @@ def bubble_sort(array)
     end
 
   end
+
   array
 end
 
-print bubble_sort([4, 3, 78, 2, 0, 2])
+def bubble_sort_by(arr)
+    (0...arr.length - 1).each do |i|
+      (1...arr.length - i).each do |j|
+        next unless j != arr.length - 1
 
-print bubble_sort([23, 6, 1, 100, 50, 1000])
+        word = yield(arr[j], arr[j + 1])
+
+        arr[j], arr[j + 1]  = arr[j + 1], arr[j] if word.positive?
+      end
+    end
+
+  arr
+end
+
+
+print bubble_sort_by(%w[hi hello hey]) { |first, second|
+  first.length - second.length
+}
+puts
+
+print bubble_sort_by(%w[hi my name is davis and my partner is brittany]) { |first, second|
+  first.length - second.length
+}
+puts
+
+print bubble_sort([4, 3, 78, 2, 0, 2])
