@@ -15,19 +15,18 @@ def bubble_sort(array)
 end
 
 def bubble_sort_by(arr)
-    (0...arr.length - 1).each do |i|
-      (1...arr.length - i).each do |j|
-        next unless j != arr.length - 1
+  (0...arr.length - 1).each do |i|
+    (1...arr.length - i).each do |j|
+      next unless j != arr.length - 1
 
-        word = yield(arr[j], arr[j + 1])
+      word = yield(arr[j], arr[j + 1])
 
-        arr[j], arr[j + 1]  = arr[j + 1], arr[j] if word.positive?
-      end
+      arr[j], arr[j + 1] = arr[j + 1], arr[j] if word.positive?
     end
+  end
 
   arr
 end
-
 
 print bubble_sort_by(%w[hi hello hey]) { |first, second|
   first.length - second.length
